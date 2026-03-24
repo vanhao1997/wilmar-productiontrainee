@@ -1,0 +1,339 @@
+/* ========================================
+   DESIGN SYSTEM — index.css
+   Premium Dark + Light Mode Support
+   ======================================== */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* --- DARK theme (default) --- */
+:root,
+[data-theme="dark"] {
+  /* Primary palette */
+  --color-primary: #0A1628;
+  --color-primary-deep: #060F1C;
+  --color-primary-light: #132240;
+  --color-accent: #D4A843;
+  --color-accent-light: #E8C36B;
+  --color-accent-glow: rgba(212, 168, 67, 0.25);
+  --color-teal: #0D7C66;
+  --color-teal-light: #12A085;
+
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-tertiary: rgba(255, 255, 255, 0.45);
+  --text-on-accent: #0A1628;
+
+  /* Surfaces */
+  --surface-bg: #0A1628;
+  --surface-card: rgba(255, 255, 255, 0.04);
+  --surface-card-hover: rgba(255, 255, 255, 0.08);
+  --surface-card-border: rgba(255, 255, 255, 0.08);
+  --surface-glass: rgba(255, 255, 255, 0.05);
+  --surface-glass-border: rgba(255, 255, 255, 0.1);
+  --surface-input: rgba(255, 255, 255, 0.06);
+  --surface-input-border: rgba(255, 255, 255, 0.12);
+  --surface-input-focus: rgba(212, 168, 67, 0.15);
+
+  /* Section alternating */
+  --section-light-bg: #F8F7F4;
+  --section-light-text: #1A1A2E;
+  --section-light-secondary: rgba(26, 26, 46, 0.65);
+  --section-light-card: #FFFFFF;
+  --section-light-card-border: rgba(0, 0, 0, 0.06);
+
+  /* Icon filter */
+  --icon-filter: brightness(0) invert(1);
+  --icon-filter-accent: brightness(0) saturate(100%) invert(70%) sepia(40%) saturate(600%) hue-rotate(10deg);
+  --icon-filter-dark: none;
+
+  /* Header */
+  --header-bg: rgba(10, 22, 40, 0.85);
+  --header-bg-scroll: rgba(10, 22, 40, 0.95);
+
+  /* Stats */
+  --stats-bg: linear-gradient(135deg, var(--color-teal), var(--color-teal-light));
+
+  /* Footer */
+  --footer-bg: #060F1C;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --footer-border: rgba(255, 255, 255, 0.08);
+
+  /* Shadows */
+  --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 40px var(--color-accent-glow);
+
+  /* Logo filter for dark bg */
+  --logo-filter: brightness(0) invert(1);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 48px;
+  --container-max: 1200px;
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --gap-xl: 48px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 100px;
+
+  /* Transitions */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- LIGHT theme --- */
+[data-theme="light"] {
+  --color-primary: #F8F7F4;
+  --color-primary-deep: #FFFFFF;
+  --color-primary-light: #EDE9E0;
+  --color-accent: #B8860B;
+  --color-accent-light: #D4A843;
+  --color-accent-glow: rgba(184, 134, 11, 0.15);
+  --color-teal: #0D7C66;
+  --color-teal-light: #12A085;
+
+  --text-primary: #1A1A2E;
+  --text-secondary: rgba(26, 26, 46, 0.7);
+  --text-tertiary: rgba(26, 26, 46, 0.45);
+  --text-on-accent: #FFFFFF;
+
+  --surface-bg: #F8F7F4;
+  --surface-card: rgba(0, 0, 0, 0.03);
+  --surface-card-hover: rgba(0, 0, 0, 0.06);
+  --surface-card-border: rgba(0, 0, 0, 0.08);
+  --surface-glass: rgba(255, 255, 255, 0.7);
+  --surface-glass-border: rgba(0, 0, 0, 0.08);
+  --surface-input: rgba(0, 0, 0, 0.04);
+  --surface-input-border: rgba(0, 0, 0, 0.12);
+  --surface-input-focus: rgba(184, 134, 11, 0.1);
+
+  --section-light-bg: #FFFFFF;
+  --section-light-text: #1A1A2E;
+  --section-light-secondary: rgba(26, 26, 46, 0.65);
+  --section-light-card: #FFFFFF;
+  --section-light-card-border: rgba(0, 0, 0, 0.08);
+
+  --icon-filter: brightness(0);
+  --icon-filter-accent: brightness(0) saturate(100%) invert(55%) sepia(80%) saturate(500%) hue-rotate(10deg);
+  --icon-filter-dark: brightness(0) invert(1);
+
+  --header-bg: rgba(248, 247, 244, 0.9);
+  --header-bg-scroll: rgba(248, 247, 244, 0.96);
+
+  --stats-bg: linear-gradient(135deg, var(--color-teal), var(--color-teal-light));
+
+  --footer-bg: #1A1A2E;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --footer-border: rgba(255, 255, 255, 0.08);
+
+  --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 40px var(--color-accent-glow);
+
+  --logo-filter: none;
+}
+
+/* Light mode hero override: use dark overlay for readability */
+[data-theme="light"] .section--hero {
+  background: linear-gradient(135deg, #0A1628 0%, #132240 40%, #0D7C66 100%);
+}
+
+[data-theme="light"] .section--hero .hero__content,
+[data-theme="light"] .section--hero .hero__scroll-indicator {
+  color: #fff;
+}
+
+[data-theme="light"] .section--hero .icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Light mode dark sections override */
+[data-theme="light"] .section--career,
+[data-theme="light"] .section--roadmap,
+[data-theme="light"] .section--apply {
+  background: linear-gradient(180deg, #0A1628 0%, #132240 100%);
+  color: #fff;
+}
+
+[data-theme="light"] .section--career .icon,
+[data-theme="light"] .section--roadmap .icon,
+[data-theme="light"] .section--apply .icon {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="light"] .section--career,
+[data-theme="light"] .section--roadmap,
+[data-theme="light"] .section--apply {
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-tertiary: rgba(255, 255, 255, 0.45);
+  --surface-card: rgba(255, 255, 255, 0.04);
+  --surface-card-border: rgba(255, 255, 255, 0.08);
+  --surface-input: rgba(255, 255, 255, 0.06);
+  --surface-input-border: rgba(255, 255, 255, 0.12);
+}
+
+/* Light header nav text */
+[data-theme="light"] .header__nav-link {
+  color: #1A1A2E;
+}
+
+[data-theme="light"] .header__nav-link:hover {
+  color: var(--color-accent);
+}
+
+/* --- Reset & base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', 'Montserrat', system-ui, -apple-system, sans-serif;
+  background: var(--surface-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background var(--transition), color var(--transition);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- Icon system (Phosphor icons as <img>) --- */
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: var(--icon-filter);
+  transition: filter var(--transition);
+}
+
+.icon--xs {
+  width: 14px;
+  height: 14px;
+}
+
+.icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--md {
+  width: 28px;
+  height: 28px;
+}
+
+.icon--lg {
+  width: 36px;
+  height: 36px;
+}
+
+.icon--xl {
+  width: 48px;
+  height: 48px;
+}
+
+.icon--accent {
+  filter: var(--icon-filter-accent);
+}
+
+/* --- Keyframes --- */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* --- Scroll animations with data-animate --- */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}

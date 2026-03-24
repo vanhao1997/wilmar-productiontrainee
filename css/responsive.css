@@ -1,0 +1,294 @@
+/* ========================================
+   RESPONSIVE — Premium + Light/Dark Mode
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+
+    .intro__panel-inner {
+        flex-direction: column;
+    }
+
+    .intro__brands,
+    .intro__desc {
+        flex: none;
+    }
+
+    .career__layout {
+        flex-direction: column;
+    }
+
+    .career__sidebar {
+        flex: none;
+        flex-direction: row;
+    }
+
+    .career__tab {
+        flex: 1;
+    }
+
+    .career__position-body {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 16px;
+    }
+
+    .header__logo {
+        height: 32px;
+    }
+
+    .header__logo--wfl {
+        height: 28px;
+    }
+
+    .header__right {
+        gap: 8px;
+    }
+
+    .header__lang-btn {
+        padding: 0 10px;
+    }
+
+    .section__container {
+        padding: 72px 20px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    /* Hero */
+    .hero__title-line1 {
+        font-size: 36px;
+        letter-spacing: 3px;
+    }
+
+    .hero__title-line2 {
+        font-size: 32px;
+    }
+
+    .hero__program-name {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+
+    .hero__cta-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero__scroll-indicator {
+        display: none;
+    }
+
+    /* Stats */
+    .stats__container {
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0 20px;
+    }
+
+    .stats__item {
+        flex: 0 0 calc(50% - 24px);
+    }
+
+    .stats__divider {
+        display: none;
+    }
+
+    .stats__number {
+        font-size: 28px;
+    }
+
+    /* Intro */
+    .intro__tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .intro__brand-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro__fields {
+        flex-direction: column;
+    }
+
+    .intro__field {
+        flex: none;
+        max-width: 100%;
+    }
+
+    /* Criteria */
+    .criteria__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .criteria__card--accent {
+        grid-column: auto;
+    }
+
+    /* Career */
+    .career__sidebar {
+        flex-direction: column;
+    }
+
+    .career__position {
+        padding: 24px 16px;
+    }
+
+    .career__position-body {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .career__position-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Journey */
+    .journey__timeline {
+        padding-left: 24px;
+    }
+
+    .journey__step {
+        padding-left: 32px;
+    }
+
+    .journey__dot {
+        left: -24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .journey__line {
+        left: 3px;
+    }
+
+    /* Roadmap */
+    .roadmap__timeline::before {
+        left: 20px;
+    }
+
+    .roadmap__step {
+        gap: 20px;
+    }
+
+    .roadmap__step-marker {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .roadmap__step-card {
+        padding: 20px;
+    }
+
+    .roadmap__step-card::before {
+        display: none;
+    }
+
+    .roadmap__step-card h3 {
+        font-size: 17px;
+    }
+
+    /* Hero shapes */
+    .hero__shape--hexagon,
+    .hero__shape--ring {
+        display: none;
+    }
+
+    .hero__shape--diamond {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero__shape--circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Testimonials */
+    .testimonials__card {
+        padding: 24px;
+    }
+
+    .testimonials__photo {
+        width: 72px;
+        height: 72px;
+    }
+
+    .testimonials__progress {
+        max-width: 200px;
+    }
+
+    /* Form */
+    .apply__form {
+        padding: 28px 20px;
+    }
+
+    .apply__form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apply__group--full {
+        grid-column: auto;
+    }
+
+    /* Footer */
+    .footer__offices {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__cta-btn span {
+        display: none;
+    }
+
+    .header__cta-btn {
+        padding: 10px 14px;
+    }
+
+    .header__icon-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .hero__title-line1 {
+        font-size: 28px;
+    }
+
+    .hero__title-line2 {
+        font-size: 24px;
+    }
+
+    .hero__program-name {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .hero__cta--primary {
+        padding: 14px 28px;
+        font-size: 13px;
+    }
+}
