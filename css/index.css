@@ -185,6 +185,99 @@
   --surface-input-border: rgba(255, 255, 255, 0.3);
 }
 
+/* ---- Contrast fixes for teal sections ---- */
+
+/* Career tags: white text on semi-transparent white bg */
+[data-theme="light"] .section--career .career__position-tags span {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Career position section headings h4 */
+[data-theme="light"] .section--career .career__position-section h4 {
+  color: #FAA434;
+}
+
+/* Roadmap cards: higher contrast bg */
+[data-theme="light"] .section--roadmap .roadmap__step-card {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step-card::before {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Roadmap sub-headers: bright colors for contrast on teal */
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(1) .roadmap__step-sub {
+  color: #FFEEBA;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(2) .roadmap__step-sub {
+  color: #FFD580;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(3) .roadmap__step-sub {
+  color: #FFB8A0;
+}
+
+/* Roadmap duration tags: solid bg for readability */
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(1) .roadmap__step-duration {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(2) .roadmap__step-duration {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(3) .roadmap__step-duration {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* Roadmap icons: white bg on teal */
+[data-theme="light"] .section--roadmap .roadmap__step-icon {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Apply form inputs: solid white bg for readability */
+[data-theme="light"] .section--apply .form__input,
+[data-theme="light"] .section--apply .form__select,
+[data-theme="light"] .section--apply .form__textarea {
+  background: rgba(255, 255, 255, 0.9);
+  color: #212529;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Form placeholders: visible gray */
+[data-theme="light"] .section--apply .form__input::placeholder,
+[data-theme="light"] .section--apply .form__textarea::placeholder {
+  color: rgba(100, 100, 100, 0.7);
+}
+
+/* Form select default state */
+[data-theme="light"] .section--apply .form__select {
+  color: #212529;
+}
+
+/* Form labels: ensure white and bold */
+[data-theme="light"] .section--apply .form__label {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Section labels on teal */
+[data-theme="light"] .section--career .section__label,
+[data-theme="light"] .section--roadmap .section__label,
+[data-theme="light"] .section--apply .section__label {
+  color: #FFD580;
+  font-weight: 700;
+}
+
 /* Light header nav text */
 [data-theme="light"] .header__nav-link {
   color: #1A1A2E;
