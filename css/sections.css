@@ -232,11 +232,12 @@
     filter: brightness(0) saturate(100%);
 }
 
-/* Dark section versions */
+/* Teal background sections (matching Wilmar background.jpg) */
 .section--career,
 .section--roadmap,
 .section--apply {
-    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    background: linear-gradient(135deg, #2A8A8E 0%, #2CBCB4 50%, #36B5AC 100%);
+    color: #fff;
 }
 
 .section--career .icon,
