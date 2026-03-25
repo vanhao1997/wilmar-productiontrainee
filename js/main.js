@@ -391,5 +391,5 @@ window.addEventListener('scroll', () => {
     resetProgress();
 })();
 
-console.log('✨ W-Future Leader 2026 — Premium with i18n + Theme');
+
 
