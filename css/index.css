@@ -4,20 +4,20 @@
    ======================================== */
 
 /* --- Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
 
 /* --- DARK theme (default) --- */
 :root,
 [data-theme="dark"] {
-  /* Primary palette */
+  /* Primary palette — Wilmar Corporate */
   --color-primary: #0A1628;
   --color-primary-deep: #060F1C;
   --color-primary-light: #132240;
-  --color-accent: #D4A843;
-  --color-accent-light: #E8C36B;
-  --color-accent-glow: rgba(212, 168, 67, 0.25);
-  --color-teal: #0D7C66;
-  --color-teal-light: #12A085;
+  --color-accent: #FAA434;
+  --color-accent-light: #FDB95B;
+  --color-accent-glow: rgba(250, 164, 52, 0.25);
+  --color-teal: #2A8A8E;
+  --color-teal-light: #36B5AC;
 
   /* Text */
   --text-primary: #FFFFFF;
@@ -69,9 +69,9 @@
   --logo-filter: brightness(0) invert(1);
 
   /* Typography */
-  --font-serif: 'Playfair Display', 'Georgia', serif;
-  --font-sans: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Poppins', system-ui, sans-serif;
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-body: 'Poppins', system-ui, -apple-system, sans-serif;
 
   /* Spacing */
   --section-padding: 100px 48px;
@@ -95,51 +95,51 @@
 
 /* --- LIGHT theme --- */
 [data-theme="light"] {
-  --color-primary: #F8F7F4;
+  --color-primary: #FFFFFF;
   --color-primary-deep: #FFFFFF;
-  --color-primary-light: #EDE9E0;
-  --color-accent: #B8860B;
-  --color-accent-light: #D4A843;
-  --color-accent-glow: rgba(184, 134, 11, 0.15);
-  --color-teal: #0D7C66;
-  --color-teal-light: #12A085;
+  --color-primary-light: #F0F4F4;
+  --color-accent: #FAA434;
+  --color-accent-light: #FDB95B;
+  --color-accent-glow: rgba(250, 164, 52, 0.15);
+  --color-teal: #2A8A8E;
+  --color-teal-light: #36B5AC;
 
-  --text-primary: #1A1A2E;
-  --text-secondary: rgba(26, 26, 46, 0.7);
-  --text-tertiary: rgba(26, 26, 46, 0.45);
+  --text-primary: #212529;
+  --text-secondary: rgba(33, 37, 41, 0.75);
+  --text-tertiary: rgba(33, 37, 41, 0.5);
   --text-on-accent: #FFFFFF;
 
-  --surface-bg: #F8F7F4;
-  --surface-card: rgba(0, 0, 0, 0.03);
-  --surface-card-hover: rgba(0, 0, 0, 0.06);
+  --surface-bg: #FFFFFF;
+  --surface-card: rgba(42, 138, 142, 0.04);
+  --surface-card-hover: rgba(42, 138, 142, 0.08);
   --surface-card-border: rgba(0, 0, 0, 0.08);
-  --surface-glass: rgba(255, 255, 255, 0.7);
-  --surface-glass-border: rgba(0, 0, 0, 0.08);
-  --surface-input: rgba(0, 0, 0, 0.04);
-  --surface-input-border: rgba(0, 0, 0, 0.12);
-  --surface-input-focus: rgba(184, 134, 11, 0.1);
+  --surface-glass: rgba(255, 255, 255, 0.85);
+  --surface-glass-border: rgba(0, 0, 0, 0.06);
+  --surface-input: #FFFFFF;
+  --surface-input-border: rgba(0, 0, 0, 0.15);
+  --surface-input-focus: rgba(42, 138, 142, 0.12);
 
-  --section-light-bg: #FFFFFF;
-  --section-light-text: #1A1A2E;
-  --section-light-secondary: rgba(26, 26, 46, 0.65);
+  --section-light-bg: #F7FAFA;
+  --section-light-text: #212529;
+  --section-light-secondary: rgba(33, 37, 41, 0.65);
   --section-light-card: #FFFFFF;
   --section-light-card-border: rgba(0, 0, 0, 0.08);
 
   --icon-filter: brightness(0);
-  --icon-filter-accent: brightness(0) saturate(100%) invert(55%) sepia(80%) saturate(500%) hue-rotate(10deg);
+  --icon-filter-accent: brightness(0) saturate(100%) invert(65%) sepia(55%) saturate(600%) hue-rotate(350deg);
   --icon-filter-dark: brightness(0) invert(1);
 
-  --header-bg: rgba(248, 247, 244, 0.9);
-  --header-bg-scroll: rgba(248, 247, 244, 0.96);
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --header-bg-scroll: rgba(255, 255, 255, 0.97);
 
   --stats-bg: linear-gradient(135deg, var(--color-teal), var(--color-teal-light));
 
-  --footer-bg: #1A1A2E;
-  --footer-text: rgba(255, 255, 255, 0.6);
-  --footer-border: rgba(255, 255, 255, 0.08);
+  --footer-bg: #1A2A2E;
+  --footer-text: rgba(255, 255, 255, 0.65);
+  --footer-border: rgba(255, 255, 255, 0.1);
 
-  --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.08);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.06);
+  --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.05);
   --shadow-glow: 0 0 40px var(--color-accent-glow);
 
   --logo-filter: none;
@@ -147,7 +147,7 @@
 
 /* Light mode hero override: use dark overlay for readability */
 [data-theme="light"] .section--hero {
-  background: linear-gradient(135deg, #0A1628 0%, #132240 40%, #0D7C66 100%);
+  background: linear-gradient(135deg, #1A3A3E 0%, #2A8A8E 50%, #36B5AC 100%);
 }
 
 [data-theme="light"] .section--hero .hero__content,
