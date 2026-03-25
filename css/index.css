@@ -164,118 +164,159 @@
 [data-theme="light"] .section--roadmap,
 [data-theme="light"] .section--apply {
   background: linear-gradient(135deg, #2A8A8E 0%, #2CBCB4 50%, #36B5AC 100%);
-  color: #fff;
+  color: #212529;
 }
 
 [data-theme="light"] .section--career .icon,
 [data-theme="light"] .section--roadmap .icon,
 [data-theme="light"] .section--apply .icon {
-  filter: brightness(0) invert(1);
+  filter: brightness(0) saturate(100%);
 }
 
 [data-theme="light"] .section--career,
 [data-theme="light"] .section--roadmap,
 [data-theme="light"] .section--apply {
-  --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-tertiary: rgba(255, 255, 255, 0.6);
-  --surface-card: rgba(255, 255, 255, 0.1);
-  --surface-card-border: rgba(255, 255, 255, 0.2);
-  --surface-input: rgba(255, 255, 255, 0.15);
-  --surface-input-border: rgba(255, 255, 255, 0.3);
+  --text-primary: #212529;
+  --text-secondary: rgba(0, 0, 0, 0.75);
+  --text-tertiary: rgba(0, 0, 0, 0.55);
+  --surface-card: rgba(255, 255, 255, 0.35);
+  --surface-card-border: rgba(255, 255, 255, 0.45);
+  --surface-input: rgba(255, 255, 255, 0.85);
+  --surface-input-border: rgba(255, 255, 255, 0.6);
 }
 
-/* ---- Contrast fixes for teal sections ---- */
+/* ---- Black text contrast on teal sections ---- */
 
-/* Career tags: white text on semi-transparent white bg */
-[data-theme="light"] .section--career .career__position-tags span {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+/* Section titles & subtitles */
+[data-theme="light"] .section--career .section__title,
+[data-theme="light"] .section--roadmap .section__title,
+[data-theme="light"] .section--apply .section__title {
+  color: #212529;
 }
 
-/* Career position section headings h4 */
-[data-theme="light"] .section--career .career__position-section h4 {
+[data-theme="light"] .section--career .section__title em,
+[data-theme="light"] .section--roadmap .section__title em,
+[data-theme="light"] .section--apply .section__title em {
   color: #FAA434;
 }
 
-/* Roadmap cards: higher contrast bg */
-[data-theme="light"] .section--roadmap .roadmap__step-card {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
-[data-theme="light"] .section--roadmap .roadmap__step-card::before {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
-/* Roadmap sub-headers: bright colors for contrast on teal */
-[data-theme="light"] .section--roadmap .roadmap__step:nth-child(1) .roadmap__step-sub {
-  color: #FFEEBA;
-}
-
-[data-theme="light"] .section--roadmap .roadmap__step:nth-child(2) .roadmap__step-sub {
-  color: #FFD580;
-}
-
-[data-theme="light"] .section--roadmap .roadmap__step:nth-child(3) .roadmap__step-sub {
-  color: #FFB8A0;
-}
-
-/* Roadmap duration tags: solid bg for readability */
-[data-theme="light"] .section--roadmap .roadmap__step:nth-child(1) .roadmap__step-duration {
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
-}
-
-[data-theme="light"] .section--roadmap .roadmap__step:nth-child(2) .roadmap__step-duration {
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
-}
-
-[data-theme="light"] .section--roadmap .roadmap__step:nth-child(3) .roadmap__step-duration {
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
-}
-
-/* Roadmap icons: white bg on teal */
-[data-theme="light"] .section--roadmap .roadmap__step-icon {
-  background: rgba(255, 255, 255, 0.2) !important;
-}
-
-/* Apply form inputs: solid white bg for readability */
-[data-theme="light"] .section--apply .form__input,
-[data-theme="light"] .section--apply .form__select,
-[data-theme="light"] .section--apply .form__textarea {
-  background: rgba(255, 255, 255, 0.9);
+[data-theme="light"] .section--career .section__subtitle,
+[data-theme="light"] .section--roadmap .section__subtitle,
+[data-theme="light"] .section--apply .section__subtitle {
   color: #212529;
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Form placeholders: visible gray */
-[data-theme="light"] .section--apply .form__input::placeholder,
-[data-theme="light"] .section--apply .form__textarea::placeholder {
-  color: rgba(100, 100, 100, 0.7);
-}
-
-/* Form select default state */
-[data-theme="light"] .section--apply .form__select {
-  color: #212529;
-}
-
-/* Form labels: ensure white and bold */
-[data-theme="light"] .section--apply .form__label {
-  color: #fff;
-  font-weight: 600;
 }
 
 /* Section labels on teal */
 [data-theme="light"] .section--career .section__label,
 [data-theme="light"] .section--roadmap .section__label,
 [data-theme="light"] .section--apply .section__label {
-  color: #FFD580;
+  color: #212529;
   font-weight: 700;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Career tags: dark text on white bg */
+[data-theme="light"] .section--career .career__position-tags span {
+  background: rgba(255, 255, 255, 0.5);
+  color: #212529;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Career position section headings h4 */
+[data-theme="light"] .section--career .career__position-section h4 {
+  color: #0D5E5F;
+}
+
+/* Career position text */
+[data-theme="light"] .section--career .career__position-title,
+[data-theme="light"] .section--career .career__position-meta span {
+  color: #212529;
+}
+
+[data-theme="light"] .section--career .career__position-section li {
+  color: #212529;
+}
+
+/* Roadmap cards: solid white bg for readability */
+[data-theme="light"] .section--roadmap .roadmap__step-card {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step-card::before {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Roadmap card h3: black */
+[data-theme="light"] .section--roadmap .roadmap__step-card h3 {
+  color: #212529;
+}
+
+/* Roadmap sub-headers: dark teal for accent */
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(1) .roadmap__step-sub {
+  color: #0D5E5F;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(2) .roadmap__step-sub {
+  color: #8B6914;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(3) .roadmap__step-sub {
+  color: #9B3D25;
+}
+
+/* Roadmap description text */
+[data-theme="light"] .section--roadmap .roadmap__step-card p:last-child {
+  color: #212529;
+}
+
+/* Roadmap duration tags: dark text on white bg */
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(1) .roadmap__step-duration {
+  background: rgba(255, 255, 255, 0.5);
+  color: #0D5E5F;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(2) .roadmap__step-duration {
+  background: rgba(255, 255, 255, 0.5);
+  color: #8B6914;
+}
+
+[data-theme="light"] .section--roadmap .roadmap__step:nth-child(3) .roadmap__step-duration {
+  background: rgba(255, 255, 255, 0.5);
+  color: #9B3D25;
+}
+
+/* Roadmap icons: white bg */
+[data-theme="light"] .section--roadmap .roadmap__step-icon {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Apply form: labels dark, inputs white bg */
+[data-theme="light"] .section--apply label {
+  color: #212529;
+  font-weight: 600;
+}
+
+[data-theme="light"] .section--apply input,
+[data-theme="light"] .section--apply select,
+[data-theme="light"] .section--apply textarea {
+  background: rgba(255, 255, 255, 0.9);
+  color: #212529;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="light"] .section--apply input::placeholder,
+[data-theme="light"] .section--apply textarea::placeholder {
+  color: rgba(80, 80, 80, 0.6);
+}
+
+[data-theme="light"] .section--apply .apply__consent {
+  color: #212529;
+}
+
+[data-theme="light"] .section--apply .apply__consent a {
+  color: #0D5E5F;
 }
 
 /* Light header nav text */
